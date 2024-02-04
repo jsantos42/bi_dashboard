@@ -25,5 +25,9 @@ export default function Plot({
 		return () => chartInstance?.destroy();
 	});
 
-	return <canvas ref={chartRef}></canvas>;
+	return (
+		<div className="flex justify-center">
+			<canvas className="w-full" ref={chartRef}></canvas>
+		</div>
+	);
 }
