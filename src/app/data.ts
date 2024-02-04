@@ -31,12 +31,56 @@ export const lineOptions: ChartOptions = {
 		x: {
 			type: 'linear',
 			position: 'bottom',
+			max: 100,
+			ticks: {
+				stepSize: 25,
+				color: 'rgba(255, 255, 255, 0.5)',
+			},
+			grid: {
+				display: false,
+			},
 		},
 		y: {
 			type: 'linear',
 			position: 'left',
+			max: 150,
+			ticks: {
+				stepSize: 25,
+				color: 'rgba(255, 255, 255, 0.5)',
+			},
+			grid: {
+				display: false,
+			},
 		},
 	},
+	plugins: {
+		legend: {
+			display: true,
+			position: 'bottom',
+			labels: {
+				padding: 40,
+				color: 'rgba(255, 255, 255, 0.8)',
+				font: {
+					size: 14,
+				},
+			},
+		},
+		title: {
+			display: true,
+			text: 'Some Line Chart',
+			color: 'rgba(255, 255, 255, 0.8)',
+			font: {
+				size: 20,
+			},
+		},
+	},
+	elements: {
+		point: {
+			radius: 1,
+			borderWidth: 2,
+		},
+	},
+	aspectRatio: 1,
 };
 
 //==============================================================================
@@ -79,10 +123,56 @@ export const scatterOptions: ChartOptions = {
 		x: {
 			type: 'linear',
 			position: 'bottom',
+			max: 150,
+			ticks: {
+				stepSize: 25,
+				color: 'rgba(255, 255, 255, 0.5)',
+			},
+			grid: {
+				display: true,
+				color: 'rgba(255, 255, 255, 0.05)',
+			},
 		},
 		y: {
 			type: 'linear',
 			position: 'left',
+			max: 150,
+			ticks: {
+				stepSize: 25,
+				color: 'rgba(255, 255, 255, 0.5)',
+			},
+			grid: {
+				display: true,
+				color: 'rgba(255, 255, 255, 0.05)',
+			},
 		},
 	},
+	plugins: {
+		legend: {
+			display: true,
+			position: 'bottom',
+			labels: {
+				padding: 20,
+				color: 'rgba(255, 255, 255, 0.8)',
+				font: {
+					size: 14,
+				},
+			},
+		},
+		title: {
+			display: true,
+			text: 'Some Scatter Chart',
+			color: 'rgba(255, 255, 255, 0.8)',
+			font: {
+				size: 20,
+			},
+		},
+	},
+	elements: {
+		point: {
+			radius: 1,
+			borderWidth: 2,
+		},
+	},
+	aspectRatio: 1,
 };
