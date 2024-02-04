@@ -1,11 +1,15 @@
-import LineChart from '@/app/components/LineChart';
-import ScatterChart from '@/app/components/ScatterChart';
+import Plot from '@/app/components/Plot';
+import { lineData, lineOptions, scatterData, scatterOptions } from '@/app/data';
 
 export default function Home() {
 	return (
 		<>
-			<LineChart />
-			<ScatterChart />
+			<Plot type={'line'} data={lineData} options={lineOptions} />
+			<Plot
+				type={'scatter'}
+				data={scatterData}
+				options={scatterOptions}
+			/>
 		</>
 	);
 }
