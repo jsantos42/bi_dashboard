@@ -6,7 +6,7 @@ import localFont from 'next/font/local';
 
 const inter = Inter({ subsets: ['latin'] });
 const degular = localFont({
-	src: './fonts/DegularVariable.ttf',
+	src: '../fonts/DegularVariable.ttf',
 	display: 'swap',
 });
 
