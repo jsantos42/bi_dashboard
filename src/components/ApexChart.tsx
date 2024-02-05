@@ -18,8 +18,9 @@ export default function Chart({
 	const [chartHeight, setChartHeight] = useState(0);
 
 	const resizeChart = () => {
+		const PADDING = 40;
 		if (containerRef.current) {
-			setChartHeight(containerRef.current.offsetWidth - 40);
+			setChartHeight(containerRef.current.offsetWidth - PADDING);
 		}
 	};
 
