@@ -17,11 +17,20 @@ export default function Chart({
 	const containerRef = useRef<HTMLDivElement>(null);
 	const [chartHeight, setChartHeight] = useState(0);
 
-	useEffect(() => {
+	const resizeChart = () => {
 		if (containerRef.current) {
 			setChartHeight(containerRef.current.offsetWidth - 40);
 		}
-	}, []);
+	};
+
+	useEffect(() => {
+		resizeChart();
+		window.addEventListener('resize', resizeChart);
+
+		return () => {
+			window.removeEventListener('resize', resizeChart);
+		};
+	});
 
 	return (
 		<div ref={containerRef} className={classes}>
