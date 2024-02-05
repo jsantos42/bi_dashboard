@@ -7,6 +7,7 @@ import {
 	chartjsScatterOptions,
 } from '@/data/chartJs';
 import { apexchartsLineOptions, apexchartsLineSeries } from '@/data/apexCharts';
+import Patients from '@/components/Patients';
 
 const ApexChart = dynamic(() => import('@/components/ApexChart'), {
 	ssr: false,
@@ -21,6 +22,7 @@ export default function Home() {
 			className="w-full h-full grid aspect-square grid-cols-mobile auto-rows-min
 		min-[500px]:grid-cols-desktop gap-16 sm:gap-10 justify-center"
 		>
+			<Patients classes={classes} />
 			<ApexChart
 				type={'line'}
 				series={apexchartsLineSeries}
