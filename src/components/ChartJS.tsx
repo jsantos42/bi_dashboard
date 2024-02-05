@@ -6,10 +6,12 @@ export default function ChartJS({
 	type,
 	data,
 	options,
+	classes,
 }: {
 	type: ChartType;
 	data: ChartData;
 	options: ChartOptions;
+	classes: string;
 }) {
 	let chartInstance: Chart | null = null;
 	const chartRef = useRef<HTMLCanvasElement>(null);
@@ -25,7 +27,7 @@ export default function ChartJS({
 	});
 
 	return (
-		<div className="flex justify-center">
+		<div className={classes}>
 			<canvas className="w-full" ref={chartRef}></canvas>
 		</div>
 	);

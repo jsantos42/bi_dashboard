@@ -3,17 +3,14 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 245, 245, 245;
-	--background-rgb: 4, 21, 64;
+	--foreground-rgb: 200, 200, 200;
+	--foreground-highlight-rgb: 255, 255, 255;
+	--background-rgb: 18, 21, 37;
+	--background-highlight-rgb: 24, 28, 47;
+	--primary-rgb: 4, 21, 64;
 }
 
 body {
 	color: rgb(var(--foreground-rgb));
 	background-color: rgb(var(--background-rgb));
-}
-
-@layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
 }

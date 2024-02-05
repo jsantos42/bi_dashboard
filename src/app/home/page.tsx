@@ -13,26 +13,31 @@ const ApexChart = dynamic(() => import('@/components/ApexChart'), {
 });
 
 export default function Home() {
+	const classes =
+		'w-full h-full max-h-[500px] max-w-[500px] aspect-square p-5 bg-highlight rounded-md';
+
 	return (
 		<div
-			className="w-full h-full grid aspect-square grid-cols-mobile
-		min-[500px]:grid-cols-desktop gap-20 sm:gap-4 justify-center items-center"
+			className="w-full h-full grid aspect-square grid-cols-mobile auto-rows-min
+		min-[500px]:grid-cols-desktop gap-16 sm:gap-10 justify-center"
 		>
 			<ApexChart
 				type={'line'}
 				series={apexchartsLineSeries}
 				options={apexchartsLineOptions}
-				// width={'100%'}
+				classes={classes}
 			/>
 			<ChartJS
 				type={'line'}
 				data={chartjsLineData}
 				options={chartjsLineOptions}
+				classes={classes}
 			/>
 			<ChartJS
 				type={'scatter'}
 				data={chartjsScatterData}
 				options={chartjsScatterOptions}
+				classes={classes}
 			/>
 		</div>
 	);

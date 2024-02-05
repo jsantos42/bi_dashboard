@@ -1,5 +1,9 @@
 import { ChartData, ChartOptions } from 'chart.js/auto';
 
+const textColor = 'rgba(200, 200, 200, 0.5)';
+const titleColor = 'rgba(200, 200, 200, 0.8)';
+const gridColor = 'rgba(200, 200, 200, 0.05)';
+
 //==============================================================================
 // LINE CHART
 //==============================================================================
@@ -34,7 +38,7 @@ export const chartjsLineOptions: ChartOptions = {
 			max: 100,
 			ticks: {
 				stepSize: 25,
-				color: 'rgba(255, 255, 255, 0.5)',
+				color: textColor,
 			},
 			grid: {
 				display: false,
@@ -46,7 +50,7 @@ export const chartjsLineOptions: ChartOptions = {
 			max: 150,
 			ticks: {
 				stepSize: 25,
-				color: 'rgba(255, 255, 255, 0.5)',
+				color: textColor,
 			},
 			grid: {
 				display: false,
@@ -59,7 +63,7 @@ export const chartjsLineOptions: ChartOptions = {
 			position: 'bottom',
 			labels: {
 				padding: 40,
-				color: 'rgba(255, 255, 255, 0.8)',
+				color: titleColor,
 				font: {
 					size: 14,
 				},
@@ -68,10 +72,13 @@ export const chartjsLineOptions: ChartOptions = {
 		title: {
 			display: true,
 			text: 'Some Line Chart',
-			color: 'rgba(255, 255, 255, 0.8)',
+			color: titleColor,
 			font: {
-				size: 20,
+				size: 16,
+				family: 'Inter',
+				weight: 600,
 			},
+			padding: { bottom: 20 },
 		},
 	},
 	elements: {
@@ -126,11 +133,11 @@ export const chartjsScatterOptions: ChartOptions = {
 			max: 150,
 			ticks: {
 				stepSize: 25,
-				color: 'rgba(255, 255, 255, 0.5)',
+				color: textColor,
 			},
 			grid: {
 				display: true,
-				color: 'rgba(255, 255, 255, 0.05)',
+				color: gridColor,
 			},
 		},
 		y: {
@@ -139,11 +146,11 @@ export const chartjsScatterOptions: ChartOptions = {
 			max: 150,
 			ticks: {
 				stepSize: 25,
-				color: 'rgba(255, 255, 255, 0.5)',
+				color: textColor,
 			},
 			grid: {
 				display: true,
-				color: 'rgba(255, 255, 255, 0.05)',
+				color: gridColor,
 			},
 		},
 	},
@@ -153,7 +160,7 @@ export const chartjsScatterOptions: ChartOptions = {
 			position: 'bottom',
 			labels: {
 				padding: 20,
-				color: 'rgba(255, 255, 255, 0.8)',
+				color: titleColor,
 				font: {
 					size: 14,
 				},
@@ -162,10 +169,13 @@ export const chartjsScatterOptions: ChartOptions = {
 		title: {
 			display: true,
 			text: 'Some Scatter Chart',
-			color: 'rgba(255, 255, 255, 0.8)',
+			color: titleColor,
 			font: {
-				size: 20,
+				size: 16,
+				family: 'Inter',
+				weight: 600,
 			},
+			padding: { bottom: 20 },
 		},
 	},
 	elements: {

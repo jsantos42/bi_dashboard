@@ -1,9 +1,11 @@
 import { ApexOptions } from 'apexcharts';
 
+const textColor = 'rgba(200, 200, 200, 0.5)';
+const titleColor = 'rgba(200, 200, 200, 0.8)';
+
 //==============================================================================
 // LINE CHART
 //==============================================================================
-
 export const apexchartsLineSeries = [
 	{
 		name: 'Sample 1',
@@ -28,22 +30,26 @@ export const apexchartsLineSeries = [
 export const apexchartsLineOptions: ApexOptions = {
 	chart: {
 		type: 'line',
-		width: '100%',
-		height: '100%',
 		toolbar: {
 			show: false,
 		},
+		background: 'none',
 	},
+	colors: ['#e33d69', '#247BA0'],
 	stroke: {
 		width: 2,
 		curve: 'straight',
+	},
+	theme: {
+		mode: 'dark',
 	},
 	xaxis: {
 		type: 'numeric',
 		title: {
 			text: 'X-axis',
+			offsetY: 5,
 			style: {
-				color: 'rgba(255, 255, 255, 0.5)',
+				color: titleColor,
 			},
 		},
 		stepSize: 25,
@@ -51,7 +57,7 @@ export const apexchartsLineOptions: ApexOptions = {
 		min: 0,
 		labels: {
 			style: {
-				colors: 'rgba(255, 255, 255, 0.5)',
+				colors: textColor,
 			},
 		},
 		axisBorder: {
@@ -66,13 +72,14 @@ export const apexchartsLineOptions: ApexOptions = {
 		decimalsInFloat: 0,
 		title: {
 			text: 'Y-axis',
+			offsetX: -5,
 			style: {
-				color: 'rgba(255, 255, 255, 0.5)',
+				color: titleColor,
 			},
 		},
 		labels: {
 			style: {
-				colors: 'rgba(255, 255, 255, 0.5)',
+				colors: textColor,
 			},
 		},
 	},
@@ -95,18 +102,22 @@ export const apexchartsLineOptions: ApexOptions = {
 		show: true,
 		position: 'bottom',
 		labels: {
-			useSeriesColors: true,
+			colors: titleColor,
 		},
 		itemMargin: {
 			vertical: 10,
 			horizontal: 15,
 		},
+		offsetY: 10,
+		fontSize: '14px',
 	},
 	title: {
 		text: 'Sample Line Chart',
 		align: 'center',
 		style: {
-			color: 'rgba(255, 255, 255, 0.8)',
+			fontSize: '16px',
+			fontWeight: 600,
+			color: titleColor,
 		},
 	},
 	tooltip: {

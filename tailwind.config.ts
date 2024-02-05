@@ -8,6 +8,15 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			backgroundColor: {
+				theme: 'rgba(var(--background-rgb))',
+				highlight: 'rgba(var(--background-highlight-rgb))',
+			},
+			colors: {
+				theme: 'rgba(var(--foreground-rgb))',
+				themeHighlight: 'rgba(var(--foreground-highlight-rgb))',
+				contrast: 'rgba(var(--background-rgb))',
+			},
 			gridTemplateColumns: {
 				mobile: '1fr',
 				desktop: 'repeat(auto-fit, minmax(350px, 1fr))',
