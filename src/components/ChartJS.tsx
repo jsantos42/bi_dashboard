@@ -2,8 +2,7 @@
 import Chart, { ChartData, ChartOptions, ChartType } from 'chart.js/auto'; // review this to reduce bundle size
 import { useEffect, useRef } from 'react';
 
-// Needed to rename the component to avoid conflicts with the Chart type
-export default function Plot({
+export default function ChartJS({
 	type,
 	data,
 	options,

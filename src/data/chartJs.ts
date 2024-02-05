@@ -3,7 +3,7 @@ import { ChartData, ChartOptions } from 'chart.js/auto';
 //==============================================================================
 // LINE CHART
 //==============================================================================
-export const lineData: ChartData = {
+export const chartjsLineData: ChartData = {
 	datasets: [
 		{
 			label: 'Sample 1',
@@ -26,7 +26,7 @@ export const lineData: ChartData = {
 	],
 };
 
-export const lineOptions: ChartOptions = {
+export const chartjsLineOptions: ChartOptions = {
 	scales: {
 		x: {
 			type: 'linear',
@@ -86,7 +86,7 @@ export const lineOptions: ChartOptions = {
 //==============================================================================
 // SCATTER CHART
 //==============================================================================
-export const scatterData: ChartData = {
+export const chartjsScatterData: ChartData = {
 	datasets: [
 		{
 			label: 'Sample 1',
@@ -118,7 +118,7 @@ export const scatterData: ChartData = {
 	],
 };
 
-export const scatterOptions: ChartOptions = {
+export const chartjsScatterOptions: ChartOptions = {
 	scales: {
 		x: {
 			type: 'linear',
