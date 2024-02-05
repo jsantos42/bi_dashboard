@@ -15,7 +15,8 @@ const ApexChart = dynamic(() => import('@/components/ApexChart'), {
 
 export default function Home() {
 	const classes =
-		'w-full h-full max-h-[500px] max-w-[500px] aspect-square p-5 bg-highlight rounded-md';
+		'w-full h-full max-h-[500px] max-w-[500px] aspect-square p-5 ' +
+		'justify-self-center bg-highlight rounded-md';
 
 	return (
 		<div
