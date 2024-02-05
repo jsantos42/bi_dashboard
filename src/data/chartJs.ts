@@ -75,7 +75,7 @@ export const chartjsLineOptions: ChartOptions = {
 			color: titleColor,
 			font: {
 				size: 16,
-				family: 'Inter',
+				family: 'Inter, sans-serif',
 				weight: 600,
 			},
 			padding: { bottom: 20 },
@@ -172,7 +172,7 @@ export const chartjsScatterOptions: ChartOptions = {
 			color: titleColor,
 			font: {
 				size: 16,
-				family: 'Inter',
+				family: 'Inter, sans-serif',
 				weight: 600,
 			},
 			padding: { bottom: 20 },

@@ -116,6 +116,7 @@ export const apexchartsLineOptions: ApexOptions = {
 		align: 'center',
 		style: {
 			fontSize: '16px',
+			fontFamily: 'Inter, sans-serif',
 			fontWeight: 600,
 			color: titleColor,
 		},
