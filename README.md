@@ -1,6 +1,8 @@
 # BI Dashboard
 Dashboard with several charts to visualise data from a BI system.\
-Stack: **Next.js**, **React.js**, **TypeScript** and **Tailwind CSS**.
+Stack: **Next.js**, **React.js**, **TypeScript**, **Tailwind CSS**, **Docker**
+
+![bi_dashboard.gif](bi_dashboard.gif)
 
 
 ## Run
