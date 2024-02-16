@@ -20,7 +20,7 @@ export default function Home() {
 
 	return (
 		<div
-			className="w-full h-full grid aspect-square grid-cols-mobile auto-rows-min
+			className="w-full h-full grid grid-cols-mobile auto-rows-min
 		min-[500px]:grid-cols-desktop gap-16 sm:gap-10 justify-center"
 		>
 			<Patients classes={classes} />
