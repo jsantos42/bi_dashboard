@@ -1,5 +1,6 @@
 # BI Dashboard
 Dashboard with several charts to visualise data from a BI system.\
+Used both _Chart.js_ and _ApexCharts_ to display the data.\
 Stack: **Next.js**, **React.js**, **TypeScript**, **Tailwind CSS**, **Docker**
 
 ![bi_dashboard.gif](bi_dashboard.gif)
